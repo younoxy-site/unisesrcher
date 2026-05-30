@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniSearcher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="/" class="logo">UniSearcher</a>
+        <div class="nav-links">
+            <a href="#home">Accueil</a>
+            <a href="#search">Recherche</a>
+            <a href="#login">Connexion</a>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="hero">
+            <h1>UniSearcher</h1>
+            <p>Plateforme de recherche de données avancée</p>
+        </div>
+        
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-number">2.5B+</div>
+                <div class="stat-label">Records Indexés</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">1.2M</div>
+                <div class="stat-label">Recherches</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">45K</div>
+                <div class="stat-label">Utilisateurs</div>
+            </div>
+        </div>
+        
+        <div class="box" id="search">
+            <h2>Recherche Avancée</h2>
+            <form id="searchForm">
+                <div style="display: flex; gap: 1rem;">
+                    <select id="queryType" style="flex: 0.3;">
+                        <option value="email">Email</option>
+                        <option value="username">Nom d'utilisateur</option>
+                        <option value="phone">Téléphone</option>
+                        <option value="ip">Adresse IP</option>
+                    </select>
+                    <input type="text" id="queryValue" placeholder="Entrez votre recherche..." required style="flex: 1;">
+                    <button type="submit" class="btn">Rechercher</button>
+                </div>
+            </form>
+            
+            <div id="results"></div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2026 UniSearcher. Tous droits réservés.</p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
